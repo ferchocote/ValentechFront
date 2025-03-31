@@ -1,0 +1,270 @@
+
+.btn-link {
+    text-decoration: none;
+    color: #007ad9;
+    font-size: 16px;
+  }
+  
+  .btn-link:hover {
+    color: #005fa3;
+  }
+  
+  .p-table th, .p-table td {
+    text-align: center;
+  }
+  
+  .p-button-rounded {
+    border-radius: 50px;
+  }
+
+
+
+  ::ng-deep .p-dialog {
+    z-index: 1050 !important; /* Asegura que el modal esté por encima */
+    position: relative;
+  }
+  
+  ::ng-deep .p-dialog-mask {
+    z-index: 1040 !important; /* Fija la máscara del fondo */
+  }
+  
+  ::ng-deep .p-table {
+    z-index: 1; /* Asegura que la tabla no se superponga al modal */
+  }
+
+  ::ng-deep .p-dialog {
+    border-radius: 12px; /* Esquinas redondeadas */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  }
+  
+  ::ng-deep .p-dialog-header {
+    background-color: #f8f9fa; /* Fondo gris claro en el header */
+    color: #333; /* Texto oscuro */
+    font-size: 1.2rem; /* Tamaño de letra más grande */
+    font-weight: bold;
+    border-bottom: 1px solid #ddd; /* Separación entre el header y el contenido */
+  }
+  
+  ::ng-deep .p-dialog-content {
+    padding: 20px; /* Más espacio interno */
+  }
+  
+  ::ng-deep .p-dialog-footer {
+    display: flex;
+    justify-content: flex-end; /* Alinea botones a la derecha */
+    padding: 15px;
+    background-color: #f8f9fa; /* Mismo fondo que el header */
+    border-top: 1px solid #ddd; /* Separación con el contenido */
+  }
+  
+  /* Estilos para los botones */
+  ::ng-deep .p-button {
+    border-radius: 6px; /* Bordes más suaves */
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  ::ng-deep .p-button.p-button-secondary {
+    background-color: #6c757d; /* Gris oscuro */
+    color: white;
+    border: none;
+  }
+  
+  ::ng-deep .p-button.p-button-secondary:hover {
+    background-color: #5a6268;
+  }
+  
+  ::ng-deep .p-button.p-button-primary {
+    background-color: #007bff; /* Azul */
+    color: white;
+    border: none;
+  }
+  
+  ::ng-deep .p-button.p-button-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Mejora los inputs dentro del modal */
+  ::ng-deep .p-inputtext {
+    width: 100%;
+    border-radius: 6px;
+    padding: 8px;
+    border: 1px solid #ced4da;
+  }
+  
+  ::ng-deep .p-inputtext:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  /* Estilo para la tarjeta principal */
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  /* Botón principal */
+  button.p-button-success {
+    margin-bottom: 15px;
+  }
+  
+  /* Tabla de pacientes */
+  .p-table {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+.p-table th {
+    background-color: #f8f9fa;
+    text-align: left;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.p-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+  
+  /* Estilo para los diálogos (popups) */
+  .custom-dialog {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 12px;
+  }
+  
+  .custom-dialog .p-dialog-header {
+    background: #007ad9;
+    color: white;
+  }
+  
+  .custom-dialog .p-dialog-content {
+    padding: 20px;
+  }
+  
+  /* Estilo del formulario dentro del modal */
+  .p-field {
+    margin-bottom: 15px;
+  }
+  
+  /* Labels más estilizados */
+  label {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Inputs con más espacio */
+  input {
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  /* Botones dentro del formulario */
+  .p-button {
+    border-radius: 5px;
+  }
+  
+  .p-button-secondary {
+    background: #ccc;
+    color: black;
+  }
+
+  .add-patient-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    width: fit-content; /* Ajusta el tamaño al contenido */
+    margin-bottom: 15px;
+}
+
+.add-patient-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* CONTENEDOR DE FILTROS */
+.filters-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* LABELS */
+.filters-container label {
+  font-weight: bold;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+/* INPUTS */
+.filters-container .p-inputtext {
+  width: 200px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  transition: all 0.3s ease-in-out;
+}
+
+.filters-container .p-inputtext:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* BOTÓN DE FILTRO */
+.filters-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.filters-container label {
+  font-weight: bold;
+  color: #333;
+}
+
+.filters-container input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+  width: 250px;
+}
+
+.filters-container .filter-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.filters-container .filter-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
